@@ -32,10 +32,10 @@ const SubNav = () => {
                         Hỗ trợ
                     </span>
                 </div>
-                <Link className="hover:text-sub-cus cursor-pointer" href="/login">
+                <Link className="hover:text-sub-cus cursor-pointer" href="/register">
                     Đăng ký
                 </Link>
-                <Link className="hover:text-sub-cus cursor-pointer" href="/register">
+                <Link className="hover:text-sub-cus cursor-pointer" href="/login">
                     Đăng Nhập
                 </Link>
             </div>

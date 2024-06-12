@@ -1,3 +1,3 @@
 export * from "./custom"
 export * from "./product"
-export * from "./global"
+export * from "./user"

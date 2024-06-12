@@ -4,9 +4,9 @@ import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { AiFillCamera } from 'react-icons/ai';
 import Image from 'next/image';
-import Button from '../providers/form/Button';
+import Button from '../../providers/form/Button';
 import { settingProfileInputs } from '@/utils/constants';
-import Input from '../providers/form/Input';
+import Input from '../../providers/form/Input';
 
 const SettingProfile = () => {
     const maxSize = 1048576

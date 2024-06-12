@@ -5,7 +5,7 @@ import Layout from "@/app/layout";
 import { settingOptions } from "@/utils/constants";
 import { useRouter } from "next/router";
 import SettingOverview from "./SettingOverview"
-import Container from "../hero/Container";
+import Container from "../../hero/Container";
 
 export interface LayoutProps {
     children: React.ReactNode

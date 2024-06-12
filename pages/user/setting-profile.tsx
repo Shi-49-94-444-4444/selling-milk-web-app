@@ -1,5 +1,5 @@
-import SettingLayout from "@/app/components/user/SettingLayout"
-import SettingProfile from "@/app/components/user/SettingProfile"
+import SettingLayout from "@/app/components/user/setting/SettingLayout"
+import SettingProfile from "@/app/components/user/setting/SettingProfile"
 
 const SettingProfilePage = () => {
     return (

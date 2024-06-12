@@ -1,6 +1,6 @@
+import { getProductById } from '@/lib/database/controllers/ProductController';
+import connectDB from '@/lib/database/mongoose';
 import { NextApiRequest, NextApiResponse } from 'next';
-import connectDB from '../../../lib/database/mongoose';
-import { getProductById } from '../../../lib/database/controllers/ProductController';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await connectDB();

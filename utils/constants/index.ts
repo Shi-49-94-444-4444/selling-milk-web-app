@@ -497,3 +497,20 @@ export const settingProfileInputs = [
         maxLength: 500
     },
 ]
+
+export const loginInputs = [
+    {
+        id: "email",
+        label: "Email",
+        placeholder: "Nhập email của bạn",
+        type: "email",
+        name: "email"
+    },
+    {
+        id: "password",
+        label: "Mật khẩu",
+        placeholder: "Nhập mật khẩu của bạn",
+        type: "password",
+        name: "password"
+    }
+];

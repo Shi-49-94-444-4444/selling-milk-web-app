@@ -29,18 +29,18 @@ const Input: React.FC<InputProps> = ({
         }
     }
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (onChange) {
-            onChange(event)
-        }
-    }
+    // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     if (onChange) {
+    //         onChange(event)
+    //     }
+    // }
 
     const registerProps = register ? register(name) : {}
 
     return (
         <div className="gap-1 transition duration-300">
             {label && (
-                <label htmlFor={id} className="block text-left text-base font-semibold text-white mb-1">
+                <label htmlFor={id} className="block text-left text-base font-semibold text-black mb-1">
                     {label}
                 </label>
             )}
@@ -68,7 +68,7 @@ const Input: React.FC<InputProps> = ({
                             placeholder={placeholder}
                             {...registerProps}
                             disabled={disabled}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             className={`
                                 ${colorInput}
                                 w-full 
@@ -94,7 +94,7 @@ const Input: React.FC<InputProps> = ({
                             placeholder={placeholder}
                             {...registerProps}
                             disabled={disabled}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             maxLength={maxLength || 200}
                             className={`
                                 ${colorInput}
@@ -169,6 +169,7 @@ const Input: React.FC<InputProps> = ({
                             `}
                             pattern={pattern?.source}
                             onBlur={handleBlur}
+                            autoComplete="off"
                         />
                     )
                 )}
@@ -179,7 +180,7 @@ const Input: React.FC<InputProps> = ({
                 )}
             </div>
             {errors && (
-                <p className="text-red-500 font-medium h-4 text-left">
+                <p className="text-red-500 font-medium h-2 text-left">
                     {errors[id]?.message?.toString()}
                 </p>
             )}
