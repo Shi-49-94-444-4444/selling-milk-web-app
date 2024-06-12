@@ -514,3 +514,42 @@ export const loginInputs = [
         name: "password"
     }
 ];
+
+export const registerInputs = [
+    {
+        id: "username",
+        label: "Họ và tên",
+        placeholder: "Nhập họ và tên",
+        type: "text",
+        name: "username"
+    },
+    {
+        id: "email",
+        label: "Email",
+        placeholder: "Nhập email của bạn",
+        type: "email",
+        name: "email"
+    },
+    {
+        id: "phone",
+        label: "Số điện thoại",
+        placeholder: "Nhập số điện thoại",
+        type: "number",
+        name: "phone",
+        maxLength: 15
+    },
+    {
+        id: "password",
+        label: "Mật khẩu",
+        placeholder: "Nhập mật khẩu của bạn",
+        type: "password",
+        name: "password"
+    },
+    {
+        id: "confirmPassword",
+        label: "Xác nhận mật khẩu",
+        placeholder: "Nhập lại mật khẩu của bạn",
+        type: "password",
+        name: "confirmPassword"
+    }
+];

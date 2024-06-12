@@ -12,10 +12,8 @@ interface User {
     id?: string
     email?: string | null
     avatar?: string | null
-    phoneNumber?: string | null
-    userName?: string | null
-    role?: "User" | "Staff" | "Admin"
-    token?: string | null
+    phone?: string | null
+    username?: string | null
 }
 
 interface GlobalContextProps {
